@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Praying Times For Month">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Timings</title>
+    <link rel="icon" href="images/icon.webp">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <style>
+      .link:hover {
+        font-size: 22px !important;
+      }
+    </style>
+  </head>
+  <body class="bg-info m-0 overflow-x-hidden">
+    <div
+      class="bg-light d-flex flex-column vh-100 col-lg-9 col-md-12 col-sm-12 m-auto border border-5 border-dark rounded rounded-lg">
+      <div class="header bg-dark p-2 text-center fs-2 fw-bold text-light">
+        Prayer Timings
+      </div>
+
+      <div class="d-flex flex-column p-2 bg-warning fs-5 fw-bold">
+        <div class="text-center pb-2">
+          Countery : <span id="country">Egypt</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div>
+            <label for="city">City :</label>
+            <select id="city" class="form-select-sm">
+              <option value="alexandria">Alexandria</option>
+              <option value="cairo">Cairo</option>
+              <option value="sh">Sharqia</option>
+              <option value="dyarbnegm" selected>Dyarb Negm</option>
+              <option value="ashir">Ashir Mn Ramadan</option>
+              <option value="aswan">Aswan</option>
+            </select>
+          </div>
+          <div>
+            <label for="year">Year :</label>
+            <select id="year" class="form-select-sm">
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-success text-center p-1 fs-3">
+        <a class="link text-light text-decoration-none" href="index.html"
+          >مواعيد اذان اليوم الحالي
+        </a>
+      </div>
+
+      <div class="table-responsive px-2 flex-grow-1">
+        <div id="back" class="position-fixed top-50 start-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="blueviolet"
+            class="bi bi-arrow-left-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+          </svg>
+        </div>
+        <div id="forward" class="position-fixed top-50 end-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="blueviolet"
+            class="bi bi-arrow-right-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+          </svg>
+        </div>
+        <table class="table table-striped text-nowrap">
+          <thead class="table-primary position-sticky top-0">
+            <tr class="text-center">
+              <th scope="col" colspan="2">التاريخ / هجري - ميلادي</th>
+              <th scope="col">الفجر</th>
+              <th scope="col">الشروق</th>
+              <th scope="col">الظهر</th>
+              <th scope="col">العصر</th>
+              <th scope="col">المغرب</th>
+              <th scope="col">العشاء</th>
+            </tr>
+          </thead>
+          <tbody id="tableData">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="footer bg-dark p-2 text-center fw-bold text-light">
+        Prayer Timing &copy; 2025 Reserved
+      </div>
+    </div>
+
+    <script src="js/monthData.js" type="module" defer></script>
+  </body>
+</html>
