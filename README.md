@@ -39,7 +39,7 @@ Built using **HTML, CSS, JavaScript, Bootstrap**, and **Date-Fns**, with data fe
 prayer-timings-app/
 │
 ├── index.html # Daily prayer times page
-├── prayer-calendar.html # Monthly prayer calendar page
+├── month.html # Monthly prayer calendar page
 │
 ├── js/
 │ ├── dailyData.js # Handles daily timings and countdown
