@@ -7,7 +7,7 @@ Built using **HTML, CSS, JavaScript, Bootstrap**, and **Date-Fns**, with data fe
 
 🚀 Live Demo
 
-👉 https://github.com/ahmednabil22224/PrayerTimings
+👉 [https://github.com/ahmednabil22224/PrayerTimings](https://ahmednabil22224.github.io/PrayerTimings/)
 
 ---
 
