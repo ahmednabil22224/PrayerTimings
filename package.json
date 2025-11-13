@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "",
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,9 @@
     "bootstrap": "^5.3.2",
     "data-fns": "^1.1.0",
     "date-fns": "^4.1.0"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://ahmednabil22224.github.io/PrayerTimings"
 }

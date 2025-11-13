@@ -5,12 +5,11 @@
     <meta name="description" content="Prayer Timings" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prayer Timings</title>
-    <link rel="icon" href="images/icon.webp">
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="images/icon.webp" />
+    <link rel="stylesheet" href="libs/bootstrap.min.css" />
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="libs/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/4.1.0/cdn.min.js"></script>
     <style>
       .link:hover {
         font-size: 22px !important;
@@ -29,7 +28,10 @@
         <div>Countery : <span id="country">Egypt</span></div>
         <div>
           <label for="city" class="d-sm-inline-block d-none">City: </label>
-          <select id="city" class="form-select-md fs-6 p-1 rounded-3" aria-label="Select City">
+          <select
+            id="city"
+            class="form-select-md fs-6 p-1 rounded-3"
+            aria-label="Select City">
             <option class="" value="alexandria">Alexandria</option>
             <option value="cairo">Cairo</option>
             <option value="sh">Sharqia</option>
@@ -55,7 +57,10 @@
         </div>
         <div class="text-center text-primary d-flex fs-3 flex-sm-column">
           <span id="gregorian-day-name"></span>
-          <span id="current-time" class="d-block mx-2" aria-live="polite"></span>
+          <span
+            id="current-time"
+            class="d-block mx-2"
+            aria-live="polite"></span>
           <span id="higri-day-name"></span>
         </div>
         <div class="text-center d-flex flex-row-reverse flex-sm-column">
@@ -67,7 +72,9 @@
 
       <div class="fs-3 text-light text-center mt-2 p-sm-2 p-1 bg-success">
         <span>باقي علي الصلاه القادمه </span>
-        <span id="remain-time" class="fs- fw-bold text-warning text-center"></span>
+        <span
+          id="remain-time"
+          class="fs- fw-bold text-warning text-center"></span>
       </div>
 
       <div
@@ -109,7 +116,7 @@
       </div>
     </div>
 
-    <script src="./js/dailyData.js" type="module" defer></script>
+    <script src="js/dailyData.js" type="module" defer></script>
     <script></script>
   </body>
 </html>

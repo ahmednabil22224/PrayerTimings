@@ -1,4 +1,4 @@
-import { format } from "../node_modules/date-fns/index.js";
+
 import fetchData, { getUrl } from "./fetchData.js";
 
 let city = document.getElementById("city").value;
@@ -16,8 +16,8 @@ function monthlyData(data) {
   data.forEach((day) => {
     document.getElementById("tableData").innerHTML += `<tr>
                 ${
-                  format(day.date.readable, "yyyy MM dd") ==
-                  format(new Date(), "yyyy MM dd")
+                  dateFns.format(day.date.readable, "yyyy MM dd") ==
+                  dateFns.format(new Date(), "yyyy MM dd")
                     ? `
                                 <th scope="row" class="bg-dark text-light">${
                                   day.date.readable

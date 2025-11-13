@@ -1,4 +1,3 @@
-import { format } from "../node_modules/date-fns/index.js";
 import fetchData, { getUrl } from "./fetchData.js";
 
 setInterval(() => {
@@ -20,8 +19,8 @@ fetchData(getUrl(city, year, month)).then((data) => dailyData(data));
 function dailyData(data) {
   data.forEach((day) => {
     if (
-      format(day.date.readable, "yyyy MM dd") ===
-      format(new Date(), "yyyy MM dd")
+      dateFns.format(day.date.readable, "yyyy MM dd") ===
+      dateFns.format(new Date(), "yyyy MM dd")
     ) {
       document.getElementById("gregorian-day-name").textContent =
         day.date.gregorian.weekday.en;
