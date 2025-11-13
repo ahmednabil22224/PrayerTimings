@@ -50,7 +50,7 @@ prayer-timings-app/
 │ ├── logo.webp # App icon / favicon
 │ └── screenshot.webp # App preview image (used in README)
 │
-├── node_modules/ # Local dependencies (Bootstrap, Axios, Date-Fns)
+├── libs
 │ ├── axios/
 │ ├── bootstrap/
 │ └── date-fns/
