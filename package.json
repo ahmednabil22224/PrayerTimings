@@ -19,6 +19,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://ahmednabil22224.github.io/PrayerTimings"
+  }
 }
