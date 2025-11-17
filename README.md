@@ -70,9 +70,12 @@ prayer-timings-app/
 ![Desktop Screenshot](./images/preview-desktop2.png)
 
 ### 📱 Mobile
-
-![Tablet Screenshot](./images/preview-mobile1.png)
-![Tablet Screenshot](./images/preview-mobile2.png)
+<div align="center">
+  <img src="./images/preview-mobile1.png" width="400" alt="Mobile Screenshot" />
+</div>
+<div align="center">
+  <img src="./images/preview-mobile2.png" width="400" alt="Mobile Screenshot" />
+</div>
 
 ## 🚀 How to Run Locally
 
